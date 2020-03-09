@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shop</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div id="select">
+	<div class="select__text">Сортировка: </div>
+<select id="selectSorting" onchange="selectSorting()">
+  <option value="1">По названию</option>
+  <option value="2">Цене</option>
+  <option value="3">По наличию</option>
+</select>
+</div>
+
+		<div class="main">
+		<div id="header"></div>
+		<div id="products"></div>
+		</div>
+				<div class="pagination">
+		<ul id="pagination">
+			<li><</li>
+			<li>1</li>
+			<li>2</li>
+			<li>></li>
+		</ul>
+	</div>
+	<script src="js/catalog.js"></script>
+	<script src="js/localStorageUtil.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
